@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapret</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; text-align: center; color: white; background: #0d0d0d; overflow: hidden; }
+        .background { position: fixed; inset: 0; background: url('https://github.com/dolbaebinamk/gfyhtsderw3ytgfdhers3gyfedthr3sw43edytgswfr4h/releases/download/sfdsfd/Aesthetic.Anime.Sky.Wallpaper.jpg') center/cover; filter: blur(10px); z-index: -1; }
+        header, footer { display: flex; justify-content: space-between; align-items: center; padding: 20px; background: rgba(0, 0, 0, 0.6); }
+        .logo { font-size: 24px; font-weight: 600; color: #ff69b4; text-shadow: 0 0 10px rgba(255, 105, 180, 0.8); }
+        nav, .footer-content { display: flex; gap: 20px; }
+        a { color: white; text-decoration: none; font-weight: 600; transition: .3s; }
+        a:hover { color: #ff69b4; }
+        .btn, .download-btn, .sub-download-btn { padding: 10px 15px; border-radius: 5px; background: purple; }
+        .download-btn { display: inline-block; margin-top: 50px; font-size: 18px; }
+        .btn:hover, .download-btn:hover, .sub-download-btn:hover { background: #9400d3; }
+        main { margin-top: 120px; text-shadow: 0 0 10px rgba(200, 200, 200, 0.6); }
+        footer { position: fixed; bottom: 0; width: 100%; background: black; padding: 15px; justify-content: flex-end; }
+        
+        /* Панель загрузки */
+        .download-panel {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+        
+        .download-panel a {
+            display: block;
+            margin: 10px auto;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <header>
+        <div class="logo">🩷Zapret Discord</div>
+        <nav>
+            <a href="https://discord.com/" target="_blank">Discord</a>
+            <a href="https://zapretdiscord.com/about" target="_blank">О нас</a>
+            <a href="https://zapretdiscord.com/login" target="_blank">Вход</a>
+            <a href="https://zapretdiscord.com/register" class="btn" target="_blank">Регистрация</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>💜Лучший обход для Discord💜</h2>
+        <p>🩵ZapretDiscord — универсальное приложение для обхода Discord использующее VPN протокол ABFUS🩵.</p>
+        <p>💙При запуске нажмите "Подробнее" > "Выполнить в любом случае", это нормально💙</p>
+        <p>‼️Прочтите перед установкой‼️</p>
+        <a href="#" class="download-btn" onclick="toggleDownloadPanel()">Скачать для Windows 10/11</a>
+
+        <!-- Скрытая панель с кнопками загрузки -->
+        <div class="download-panel" id="downloadPanel">
+            <a href="https://zapretdiscord.com/download/win10" class="sub-download-btn" target="_blank">💠Скачать для Windows 10</a>
+            <a href="https://zapretdiscord.com/download/win11" class="sub-download-btn" target="_blank">💠Скачать для Windows 11</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <a href="https://zapretdiscord.com/more" target="_blank">Подробнее</a>
+            <a href="https://zapretdiscord.com/data-collection" target="_blank">Сбор данных</a>
+            <a href="https://github.com/zapretdiscord" target="_blank">GitHub</a>
+            <a href="https://zapretdiscord.com/russia" target="_blank">Россия</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDownloadPanel() {
+            let panel = document.getElementById("downloadPanel");
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        }
+    </script>
+
+</body>
+</html>
